@@ -8,7 +8,7 @@ Template Name: App page
 
 	<div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="Content Content--app" id="post-<?php the_ID(); ?>">
+		<div class="Content u-gridContainer content-home Content--app" id="post-<?php the_ID(); ?>">
 			<div class="u-gridContainer">
 				<h2><?php the_title(); ?></h2>
 				<aside class="u-gridCol4">

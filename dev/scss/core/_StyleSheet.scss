@@ -1,0 +1,49 @@
+//
+//		BASE2 TEMPLATE
+//		Original by: Dylan Donkers
+//		Redesigned and edited by: Sam Taal
+//		LokaalGevonden.nl
+//
+
+
+// Standaarden (base) ___________________________
+	
+	$base-bgColor:#fff;
+	$base-bgImg: url("../img/bg.png");
+
+	$base-primaryBg: #763176; // OOK RIGHT CONTENT COLOR!
+	$base-secondaryBg: #672567; // OOK VOOR FOOTER COLOR!
+
+	$base-borderColor1: #7A6E6E;
+	$base-shadow: 0px 2px 16px #7A6E6E;
+
+	$base-positionRelative: -80px;
+
+	$content-leftBg: #FFF;
+	$content-rightBg: #763176;
+
+// Typografie (font) _____________________________
+	
+	$font-typografie: 'Titillium Web';
+	$font-titel-color: #7A6E6E;
+	$font-subTitel-color: #fff;
+	$font-paragraafTitel-color: #fff;
+
+// Link kleuren (a) ______________________________
+
+	$a-normal:#FFF;
+	$a-style:#7A6E6E;
+
+//base -------------------------------------------------------------------------------------------------------------------------------------------------------
+body{
+	 background-image: $base-bgImg ; 
+	 font-family: $font-typografie; 
+}
+
+.threecolumns-wrapper{
+	background: $base-bgColor;
+}
+.fullwidth-wrapper{
+	background:$base-bgColor;
+}
+

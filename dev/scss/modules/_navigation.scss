@@ -5,65 +5,78 @@
 //
 // *************************************
 
-.Navigation {
-  @include clearfix;
-  text-align: center;
+//midden header
+//------------------------------------------------------------------------------------------------------------- -->
+
+//nav------------------------------------------------------------------------------------------------->
+.header-midden{}
+.header-midden-nav{
+	padding: 0;
+}
+.Navigation-list{
+  margin:0;
 }
 
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
-
-// Module-variableName
-
-// -------------------------------------
-// Modifiers
-// -------------------------------------
-
-// -------------------------------------
-// States
-// -------------------------------------
-
-.Navigation-list {
-	display: block;
-	margin: 0px;
+.Navigation-list--dropdown{
+	background:$base-primaryBg;
 }
 
-.Navigation-link.is-active {
-  text-decoration: underline;
-}
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- List item ----- //
-
-.Navigation-listItem {
-  display: block;
-  margin: 0 rem(15px);
+.Navigation-listItem{
   float: left;
-  &:first-of-type {
-    margin-left: 0;
-  }
-  &:last-of-type {
-    margin-right: 0;
-  }
+  padding: 3%;
+  margin:0;
+
+  	&:first-of-type {
+  		padding-left: 0;
+  	}
+
+  	a{
+  		color: $a-normal;
+  		font-weight: bold;
+  		text-transform: uppercase;
+  	}
 }
 
-// ----- Navigation link ----- //
-
-.Navigation-link {
-  text-transform: uppercase;
+.Navigation-listItem.is-active{
+	background: #672567;
+	a{
+	color: white;
+	}
 }
 
-.Navigation-link--invertedBold {
-  color: $c-white; 
-  font-weight: bold;
+.Navigation-link{
+  margin:0 auto;
+}
+
+.Bot-Nav {
+	background: $base-primaryBg;
+}
+
+.Navigation-listItem:hover{
+	opacity: 0.5;
+}
+.Navigation-listItem--hasDropdown:hover{
+	background:lighten($a-style, 10%);
+	ul{
+		a.Navigation-link{
+		color:$a-normal;
+		}
+	}
+	ul:hover{
+		a.Navigation-link{
+			color:$base-primaryBg;
+		}
+	}
+
+}
+.Navigation-listItem--hasDropdown.is-active:hover{
+	a.Navigation-link{
+			color: white;
+	}
+}
+
+.Nav-toggle {
+  .Icon.Icon--inline {
+   	fill: white;
+  }
 }

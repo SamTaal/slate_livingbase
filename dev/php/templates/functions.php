@@ -20,10 +20,10 @@ if(is_admin() && !$initialized){
 	  include_once('includes/initialize_pages.php');
 	
 	  $siteIniter = new SiteInitializer(
-		  "livingbase", 
-		  "Warmoeziersstraat 1b 3331KV Zwijndrecht", 
-		  "0783031826", 
-		  "info@livingbase.nl");
+		  "base2", 
+		  "Binckhorstlaan 36 1111AA Den Haag", 
+		  "0600000000", 
+		  "sam@Lokaalgevonden.nl");
 	  $siteIniter->initializeAll();
 	  add_option('slate_initialized', true);
 }

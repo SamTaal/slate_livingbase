@@ -1,74 +1,112 @@
-// *************************************
-//
-// Header
-// -> Main site header
-//
-// *************************************
+/*                                                      */
+/*                ---  HEADER START ---                 */
+/*                                                      */
 
-.Header {
-  background-image: url("../img/img-header-bg.png");
-  background-size: cover;
+.header-boven{
+  margin: 30px 0;
 }
 
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
-
-// -variable
-
-// -------------------------------------
-// Modifiers
-// -------------------------------------
-
-// .Module--modifierName
-
-// -------------------------------------
-// States
-// -------------------------------------
-
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- Contact bar ----- //
-
-.Header-contact {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: rgba($c-black,0.5);
+.header-boven-contact{
+  padding: 0;
+  position: relative;
 }
 
-// ----- Contact bar ----- //
-
-.Header-logo {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: rgba($c-black,0.25);
+.header-boven-contact-wrapper1{
 }
 
-// ----- Nav bar ----- //
-
-.Header-nav {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: $c-blue;
+.header-boven-contact-logo{
 }
 
-// ----- Carousel ----- //
+.header-nummer {
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  font-size: 20px;
+  font-weight: bold;
+} 
 
-.Header-carousel {
-  @extend .u-gridRow;
-  padding-bottom : ($l-whiteSpace * 4);
-  padding-top    : ($l-whiteSpace * 4);
+@media all and (max-width: 640px) {
+  .header-nummer {
+    position: static;
+    text-align:center;
+  }
+
+  .header-boven-contact{
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
+
+.header-boven-contact-wrapper2{
+  padding:7% 0 0 0;
+  position: relative;
+}
+
+.nummer-icon{
+  width: 5%;
+}
+
+.email-icon{
+  width:5%;
+}
+
+.Mob-contact-ico {
+}
+
+.header-onderkant{
+}
+
+.header-midden-nav{
+  background: $base-primaryBg;
+  box-shadow: 0px 2px 16px $base-shadow; 
+}
+
+.header-onderkant{
+  box-shadow: 0px 2px 16px $base-shadow;
+  border-bottom: 2px solid $base-borderColor1;
+  background:$base-bgColor;
+  position: relative;
+}
+
+.slogan {
+  overflow: auto;
+  position: absolute;;
+  top: 50%;
+  margin-top: -66px;
+  z-index:9999;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.57);
+}
+
+.twitter {
+  float: right;
+  padding: 28px 0;
+}
+
+@media all and (max-width: 1040px) {
+  .twitter {
+    display:none
+  }
+
+
+  .twitterres {
+    display: block;
+    float: left;
+    padding: 12px;
+  }
+}
+
+@media all and (min-width: 1040px) {
+  .twitterres {
+    display:none
+
+  }
 }

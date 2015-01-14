@@ -1,19 +1,38 @@
 .Footer {
+
 }
 
 // RESPONSIVE FOOTER
 .Footer-inner .widget {
-	@include span-columns(4);
-	@media screen and(max-width: 980px){
+	@include span-columns(6);
+	@media screen and(max-width: 500px){
 		@include span-columns(12);
 	}
 }
 
-.Footer-inner {
-}
-
 //style the widgets
 .Footer-inner .widget {
+	h4 {
+		margin:0;
+	}
 
+	p {
+		font-size: 16px;
+	}
+
+	select {
+		color: black;
+	}
 }
+
+.footer-upper {
+	background: $base-primaryBg;
+	color: $font-paragraafTitel-color;
+	padding: 30px 0;
+} 
+
+.footer-bottom{
+	background: $base-secondaryBg;
+	color: $font-paragraafTitel-color;
+} 
 

@@ -8,7 +8,7 @@ Template Name: Contactpage
 
 	<div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article class="Content Content--fullwidth u-gridContainer" id="post-<?php the_ID(); ?>">
+		<article class="Content content-home Content--fullwidth u-gridContainer" id="post-<?php the_ID(); ?>" style="background: white;padding: 0px 30px;">
 			<div class="Content-entry">
 				<h2><?php the_title(); ?></h2>
 				<div class="Content-text">
@@ -16,11 +16,11 @@ Template Name: Contactpage
 					<div class="u-gridRow">					
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
-								<p>livingbase</p>
+								<p>Livingbase</p>
 								<p>Warmoeziersstraat 1b</p>
-								<p>3331KV Zwijndrecht</p>
+								<p>3331 KV Zwijndrecht</p>
 								<p>Email: info@livingbase.nl</p>
-								<p>Tel: 0783031826</p>
+								<p>Tel: 078-3031826</p>
 							</div>
 	
 						</div>					

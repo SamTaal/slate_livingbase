@@ -39,22 +39,11 @@
   background: $c-blue;
 }
 
-// -------------------------------------
-// States
-// -------------------------------------
-
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- Submodule ----- //
-
-// .Module-subModule
+.button{
+  background:$base-primaryBg;
+  color:$a-normal;
+}
+.button:hover{
+  background:lighten($a-style, 10%);
+  color: $base-primaryBg;
+}

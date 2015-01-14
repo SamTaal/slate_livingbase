@@ -37,8 +37,10 @@
 // ----- Base ----- //
 @import "core/base";
 
-// ----- Content ----- //
+// ----- Content ----- ////
 @import "core/utilities";
+//------ stylesheet ---//
+@import "core/StyleSheet";
 
 // -------------------------------------
 // Modules
@@ -47,6 +49,10 @@
 @import "modules/article";
 
 @import "modules/button";
+
+@import "modules/bxslider";
+
+@import "modules/content";
 
 @import "modules/equalheight";
 
@@ -63,7 +69,6 @@
 @import "modules/dropdown-nav";
 
 @import "modules/responsive-nav";
-
 
 @import "modules/table";
 

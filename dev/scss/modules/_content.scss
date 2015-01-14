@@ -1,3 +1,137 @@
-.Content {
+.content-home {
+	position: relative;
+	top: $base-positionRelative;
+	z-index: 1000;
+	padding: 0;
+}
+
+
+.Content--app {
+	background: $content-leftBg;
+	padding: 20px;
+
+	h2 {
+		margin: 0;
+		padding: 0;
+	}	
+}
+
+.content-left {
+	background: $content-leftBg;
+	padding: 20px;
+	height: 308px;
+
+	h2 {
+		padding: 0;
+		margin: 0;
+	}
+
+	p {
+		font-size: 18px;
+		font-weight: 200;
+	}
+}
+
+.content-right {
+	background: #672567;
+	padding: 0px;
+	color: white;
+	height: 308px;
+
+	h2 {
+		padding: 14px;
+		margin: 0;
+		font-size: 35px;
+		text-align: center;
+		background: $content-rightBg;
+	}
+
+	p {
+		background: #672567;
+		padding: 10px;
+		padding-top: 50px;
+		margin:0;
+		text-align: center;
+	}
+
+	a {
+		padding: 30px 35px;
+		text-align:center;
+		background:white;
+		font-size: 16px;
+		color: $content-rightBg;
+		text-decoration: none;
+	}
+}
+
+@media all and (max-width: 900px) {
+  .content-left {
+  	height: auto;
+  	p {
+  		font-size: 15px;
+  	}
+
+  	h2 {
+ 		font-size: 20px;
+  	}
+  }
+
+  .content-right {
+  	height: auto;
+  	padding-bottom: 30px;
+  	h2 {
+  		font-size:20px;
+  	}
+
+  	p {
+  		a {
+  			font-size: 14px;
+  			padding: 10px;
+  		}
+  	}
+  }
 
 }
+
+.cb {
+	clear:both;
+}
+
+.gallery {
+	position: relative;
+	top: $base-positionRelative;
+	width: 100%;
+	padding: 30px 0;
+	background: #2a2a2a;
+}
+
+@media all and (max-width: 700px) {
+ 
+.content-home {
+  	position:static;
+}
+
+ .gallery {
+  position: static;
+ 	img {
+ 		width: 100%;
+ 	}
+ }
+}
+
+.gallerycontainer {
+	padding:0;
+}
+
+.gallerysecondrow {
+	margin-top: 15px;
+}
+
+.gform_wrapper .gform_footer input[type="submit"] {
+	width: 100%;
+	padding: 30px;
+}
+
+
+
+
